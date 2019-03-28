@@ -1,0 +1,15 @@
+{:deps      {medley                         {:mvn/version "1.0.0"}
+             org.clojure/java.jdbc          {:mvn/version "0.7.9"}
+             ch.qos.logback/logback-classic {:mvn/version "1.2.3" :exclusions [org.slf4j/slf4j-api]}
+             org.slf4j/jul-to-slf4j         {:mvn/version "1.7.25"}
+             org.slf4j/jcl-over-slf4j       {:mvn/version "1.7.25"}
+             org.slf4j/log4j-over-slf4j     {:mvn/version "1.7.25"}
+             org.clojure/tools.logging      {:mvn/version "0.4.1"}
+             org.clojure/core.async         {:mvn/version "0.4.490"}
+             org.clojure/clojure            {:mvn/version "1.10.0"}}
+ :paths     ["src" "resources"]
+ :aliases   {:test       {:extra-deps {com.h2database/h2 {:mvn/version "1.4.199"}
+                                       com.zaxxer/HikariCP {:mvn/version "3.3.1"}}
+                          :extra-paths ["test"]}
+             :rebel      {:extra-deps {com.bhauman/rebel-readline-cljs {:mvn/version "0.1.4"}}}}
+ :mvn/repos {"central" {:url "https://artifactory.1and1.org/artifactory/releases-virtual"}}}

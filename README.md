@@ -15,7 +15,17 @@ components.
 1. Visualize processes and process instances including the action
    states.
 
-### Demo and tests
+## Dependencies
 
-Start the Clojure REPL with the `:test` alias enabled and execute the
-tests.
+* [Clojure](https://www.clojure.org/guides/getting_started)
+
+### Visualization dependencies
+
+* The `dot` command from [Graphviz](https://graphviz.org/) package
+* The `xdg-open` [command](https://linux.die.net/man/1/xdg-open)
+
+## Demo and tests
+
+Start the Clojure REPL with the `:test` alias enabled and
+[execute](https://clojure.github.io/clojure/clojure.test-api.html#clojure.test/run-tests)
+the tests.

@@ -1,4 +1,4 @@
-(ns com.ionos.hop.constructor.storage)
+(ns com.github.bentomi.constructor.storage)
 
 (defprotocol Storage
   (store [db process-instance]

@@ -1,8 +1,7 @@
 # Constructor Engine
 
 This is a proof of concept implementation of a lightweight eingine
-that is capable of constructing HoP components from other HoP
-components.
+that is capable of constructing components from other components.
 
 ## Capabilities
 

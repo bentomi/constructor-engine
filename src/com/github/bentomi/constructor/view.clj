@@ -1,8 +1,8 @@
-(ns com.ionos.hop.constructor.view
+(ns com.github.bentomi.constructor.view
   (:require [clojure.java.shell :refer [sh]]))
 
 (def ^:private action-state->style
-  #:com.ionos.hop.constructor.core
+  #:com.github.bentomi.constructor.core
   {:forward-started "color=green, style=dotted"
    :forward-completed "color=green"
    :rollback-started "color=red, style=dotted"
@@ -20,7 +20,7 @@
   (.append sb ";\n"))
 
 (defn generate-dot
-  [{:com.ionos.hop.constructor.core/keys [actions action-states dependencies process-id]}]
+  [{:com.github.bentomi.constructor.core/keys [actions action-states dependencies process-id]}]
   (let [label (name process-id)
         sb (StringBuilder.)]
     (.append sb "digraph \"")

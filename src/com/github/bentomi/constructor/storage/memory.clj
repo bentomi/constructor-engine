@@ -1,8 +1,8 @@
-(ns com.ionos.hop.constructor.storage.memory
-  (:require [com.ionos.hop.constructor.core :as core]
-            [com.ionos.hop.constructor.storage])
+(ns com.github.bentomi.constructor.storage.memory
+  (:require [com.github.bentomi.constructor.core :as core]
+            [com.github.bentomi.constructor.storage])
   (:import (clojure.lang ExceptionInfo)
-           (com.ionos.hop.constructor.storage Storage)))
+           (com.github.bentomi.constructor.storage Storage)))
 
 (defrecord MemoryStorage [db-atom]
   Storage

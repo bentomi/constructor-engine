@@ -1,13 +1,13 @@
-(ns com.ionos.hop.constructor.storage.storage-test
+(ns com.github.bentomi.constructor.storage.storage-test
   (:require [clojure.test :as test :refer [deftest is are]]
             [clojure.inspector :as insp]
             [clojure.tools.logging :as log]
             [medley.core :as medley]
-            [com.ionos.hop.constructor.core :as core]
-            [com.ionos.hop.constructor.storage :as storage]
-            [com.ionos.hop.constructor.storage.memory :refer [->MemoryStorage]]
-            [com.ionos.hop.constructor.view :as view]
-            [com.ionos.hop.constructor.storage.db :refer [db db-fixture show-db]])
+            [com.github.bentomi.constructor.core :as core]
+            [com.github.bentomi.constructor.storage :as storage]
+            [com.github.bentomi.constructor.storage.memory :refer [->MemoryStorage]]
+            [com.github.bentomi.constructor.view :as view]
+            [com.github.bentomi.constructor.storage.db :refer [db db-fixture show-db]])
   (:import (clojure.lang ExceptionInfo)))
 
 ;;; Define processes ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

@@ -1,4 +1,4 @@
-(ns com.ionos.hop.constructor.core
+(ns com.github.bentomi.constructor.core
   (:import (java.util UUID)
            (clojure.lang ExceptionInfo)))
 

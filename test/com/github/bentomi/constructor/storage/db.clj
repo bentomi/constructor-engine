@@ -1,7 +1,7 @@
-(ns com.ionos.hop.constructor.storage.db
+(ns com.github.bentomi.constructor.storage.db
   (:require [clojure.java.jdbc :as jdbc]
             [clojure.pprint :as pp]
-            [com.ionos.hop.constructor.storage.jdbc :as dbstore])
+            [com.github.bentomi.constructor.storage.jdbc :as dbstore])
   (:import (java.util Properties)
            (com.zaxxer.hikari HikariConfig HikariDataSource)))
 

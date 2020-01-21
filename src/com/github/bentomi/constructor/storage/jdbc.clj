@@ -1,12 +1,12 @@
-(ns com.ionos.hop.constructor.storage.jdbc
+(ns com.github.bentomi.constructor.storage.jdbc
   (:require [clojure.set :as set]
             [clojure.edn :as edn]
             [clojure.java.jdbc :as jdbc]
             [medley.core :as medley]
-            [com.ionos.hop.constructor.core :as core]
-            [com.ionos.hop.constructor.storage])
+            [com.github.bentomi.constructor.core :as core]
+            [com.github.bentomi.constructor.storage])
   (:import (clojure.lang ExceptionInfo)
-           (com.ionos.hop.constructor.storage Storage)))
+           (com.github.bentomi.constructor.storage Storage)))
 
 (defn- to-db-row
   [process-instance]
